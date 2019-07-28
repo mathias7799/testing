@@ -25,7 +25,7 @@
                     <i class="fa fa-money fa-fw"></i> EXCHANGE DATA                    
                 </div>
                 <div class="panel-body">
-                    {{#if model.exchangedata}}
+              
                    
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
@@ -39,76 +39,76 @@
                             <tbody>                              
                                 <tr class="">                         
                                     <td>COIN NAME</td>
-                                    <td>{{model.exchangedata.id}}</td>                                    
+                                                                   
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>COIN RANK</td>
-                                    <td>{{model.exchangedata.rank}}</td>                                    
+                                                                  
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>COIN SYMBOL</td>
-                                    <td>{{model.exchangedata.symbol}}</td>                                    
+                                                                    
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>PRICE IN USD</td>
-                                    <td> {{  model.exchangedata.price_usd style='currency' currency='USD'}}</td>                                    
+                                                                   
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>PRICE IN INR</td>
-                                    <td> {{  model.exchangedata.price_inr style='currency' currency='INR'}}</td>                                    
+                                                                       
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>PRICE IN BTC</td>
-                                    <td> {{  model.exchangedata.price_btc style='currency' currency='BTC'}}</td>                                    
+                                                                      
                                 </tr>
                                 
                                 <tr class="">                         
                                     <td>TOTAL SUPPLY</td>
-                                    <td>{{model.exchangedata.total_supply}} ETH</td>                                    
+                                                                    
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>MARKET CAPITAL IN INR</td>
-                                    <td> {{  model.exchangedata.market_cap_inr style='currency' currency='INR'}}</td>                             
+                                                                
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>CHANGE IN 1 HOUR</td>
-                                    <td>{{ model.exchangedata.percent_change_1h }} %</td>                                    
+                                                                     
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>CHANGE IN 24 HOURS</td>
-                                    <td>{{ model.exchangedata.percent_change_24h}} %</td>                                    
+                                                                       
                                 </tr>
                                 
                                   <tr class="">                         
                                     <td>CHANGE IN 7 DAYS</td>
-                                    <td>{{ model.exchangedata.percent_change_7d }} %</td>                                    
+                                                                       
                                 </tr>
                                 
                                 
                                 <tr class="">                         
                                     <td>COIN NAME</td>
-                                    <td>{{model.exchangedata.id}}</td>                                    
+                                                                     
                                 </tr>
                                                               
                                 <tr class="">                         
                                     <td>UPDATED ON</td>
-                                    <td>{{format-date-locale model.exchangedata.last_updated }}</td>                                    
+                                                                      
                                 </tr>
                               
                                 
@@ -116,9 +116,9 @@
                             </tbody>
                         </table>
                     </div>
-                    {{else}}
+                    
                     <h3>No Data</h3>
-                    {{/if}}
+                    
                 </div>
             </div>
         </div>

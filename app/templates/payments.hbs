@@ -46,12 +46,7 @@
                                 {{#each model.payments as |tx|}}
                                 <tr>
                                     <td>{{format-date-locale tx.timestamp}}</td>
-                                    <td><strong>{{format-numbertx.formatAmount}}</strong><br/><em><small>≅ 
-                                                 {{#if (eq config.Currency 'USD') }}
-                                                {{ format-ethusd tx.amount model.exchangedata.price_usd }}
-                                                {{else}}
-                                                {{ format-ethinr tx.amount model.exchangedata.price_inr }}
-                                                {{/if}}                                               
+                                    <td><strong>{{format-numbertx.formatAmount}}</strong><br/><em><small>≅                                             
                                             
                                             </small></em></td>
                                     <td>

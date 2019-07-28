@@ -40,7 +40,7 @@
             <div class="small-box bg-green">
                 <div class="inner ">
                     <h3><span class="text-white">
-                            {{format-numbermodel.workersOnline allowEmpty=true}}
+                            {{format-number model.workersOnline allowEmpty=true}}
                         </span> </h3>
                     <p> ACTIVE WORKERS   </p>
 
@@ -90,14 +90,7 @@
                     <h3><span class="text-white" style="font-size: 30px;">
                             {{format-balance model.stats.paid}}
                         </span> </h3>
-                    <p>  ≅ 
-                        
-                        {{#if (eq config.Currency 'USD') }}
-                        {{ format-ethusd model.stats.paid model.exchangedata.price_usd }}
-                        {{else}}
-                        {{ format-ethinr model.stats.paid model.exchangedata.price_inr }}
-                        {{/if}}
-                    </p>
+        
 
                 </div>
                 <div class="icon"> <i class="fa fa-credit-card"></i> </div>
@@ -151,18 +144,18 @@
 
                     <li href="#" class="list-group-item">
                         <i class="fa fa-spinner fa-fw"></i> Your contribution in Last 'N'
-                        <span class="pull-right text-muted small"><em>{{format-numberroundPercent style='percent' maximumFractionDigits='6' allowEmpty=true}}</em>
+                        <span class="pull-right text-muted small"><em>{{format-number roundPercent style='percent' maximumFractionDigits='6' allowEmpty=true}}</em>
                         </span>
                     </li>
                     <li href="#" class="list-group-item">
                         <i class="fa fa-thermometer fa-fw"></i> My Shares in the last 'N'
-                        <span class="pull-right text-muted small"><em>{{format-numbermodel.roundShares allowEmpty=true}}</em>
+                        <span class="pull-right text-muted small"><em>{{format-number model.roundShares allowEmpty=true}}</em>
                         </span>
                     </li>
                     
                     <li href="#" class="list-group-item">
                         <i class="fa fa-cubes fa-fw"></i> Blocks Found
-                        <span class="pull-right text-muted small"><em>{{format-numbermodel.stats.blocksFound fallback='0' allowEmpty=true}}</em>
+                        <span class="pull-right text-muted small"><em>{{format-number model.stats.blocksFound fallback='0' allowEmpty=true}}</em>
                         </span>
                     </li>
                     <li href="#" class="list-group-item">
@@ -172,7 +165,7 @@
                     </li>
                     <li href="#" class="list-group-item">
                         <i class="fa fa-money fa-fw"></i> Total Payments
-                        <span class="pull-right text-muted small"><em>{{format-numbermodel.paymentsTotal allowEmpty=true}}</em>
+                        <span class="pull-right text-muted small"><em>{{format-number model.paymentsTotal allowEmpty=true}}</em>
                         </span>
                     </li>                  
                     <li href="#" class="list-group-item">

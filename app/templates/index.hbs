@@ -39,7 +39,7 @@
             <div class="small-box bg-green">
                 <div class="inner ">
                     <h3><span class="text-white">
-                            {{format-numberstats.model.minersTotal}}
+                            
                         </span> </h3>
                     <p> ACTIVE MINERS   </p>
 
@@ -85,15 +85,11 @@
             <div class="small-box bg-red">
                 <div class="inner ">
                     <h3><span class="text-white">
-                            {{#if (eq config.Currency 'USD') }}
-                             {{ stats.model.exchangedata.price_usd style='currency' currency='USD'}}
-                            {{else}}
-                             {{ stats.model.exchangedata.price_inr style='currency' currency='INR'}}                            
-                            {{/if}}
+
                            
                             
                         </span> </h3>
-                    <p> {{format-date-locale stats.model.exchangedata.last_updated }} </p>
+
 
                 </div>
                 <div class="icon">  
@@ -132,12 +128,12 @@
                     </a>
                      <a  class="list-group-item">
                         <i class="fa fa-thermometer-full fa-fw"></i> 'N' Value for the current round
-                        <span class="pull-right text-muted small"><span class="label label-success"><em>{{format-numberstats.model.stats.lastNValue}}</em></span>                           
+                        <span class="pull-right text-muted small"><span class="label label-success"><em></em></span>                           
                         </span>
                     </a>
                      <a class="list-group-item">
                         <i class="fa fa-thermometer-empty fa-fw"></i> 'N' shares buffered
-                        <span class="pull-right text-muted small"><span class="label label-success"><em>{{format-numberstats.model.stats.nShares}}</em></span>                           
+                        <span class="pull-right text-muted small"><span class="label label-success"><em></em></span>                           
                         </span>
                     </a>
                     
@@ -169,17 +165,17 @@
                     </a>
                     <a class="list-group-item">
                         <i class="fa fa-dashboard fa-fw"></i> Network Hashrate
-                        <span class="pull-right text-muted small"><em>{{format-hashrate stats.hashrate}}</em>
+                        <span class="pull-right text-muted small"><em></em>
                         </span>
                     </a>
                     <a class="list-group-item">
                         <i class="fa fa-sort-amount-asc fa-fw"></i> Blockchain Height
-                        <span class="pull-right text-muted small"><em>{{format-numberstats.height}}</em>
+                        <span class="pull-right text-muted small"><em></em>
                         </span>
                     </a>
                     <a  class="list-group-item">
                         <i class="fa fa-clock-o fa-fw"></i> Current Round Variance
-                        <span class="pull-right text-muted small"><em>{{format-numberstats.roundVariance style='percent'}}</em>
+                        <span class="pull-right text-muted small"><em></em>
                         </span>
                     </a>
                     <a class="list-group-item">
@@ -195,12 +191,8 @@
                     <a class="list-group-item">
                         <i class="fa fa-credit-card-alt fa-fw"></i> {{config.CoinShortName}}-{{config.Currency}}
                         <span class="pull-right text-muted small text-blue">≅ <em>
-                            {{#if (eq config.Currency 'USD') }}
-                             {{ stats.model.exchangedata.price_usd style='currency' currency='USD'}}
-                            {{else}}
-                             {{ stats.model.exchangedata.price_inr style='currency' currency='INR'}}                            
-                            {{/if}}</em>
-                        </span><br/><span class="text-muted small text-blue"><em>{{format-date-locale stats.model.exchangedata.last_updated }}</em></span>
+                         </em>
+                        </span><br/><span class="text-muted small text-blue"><em></em></span>
                     </a>
                 </div>
                 <!-- /.list-group -->

@@ -21,18 +21,6 @@ export default Ember.Controller.extend({
             return parseInt(this.get('model.stats.roundShares'));
         }
     }),
-    
-    ethinr: Ember.computed('stats', {
-        get() {
-            return parseFloat(this.get('model.exchangedata.price_inr'));
-        }
-    }),
-    
-     ethusd: Ember.computed('stats', {
-        get() {
-            return parseFloat(this.get('model.exchangedata.price_usd'));
-        }
-    }),
 
     difficulty: Ember.computed('model.nodes', {
         get() {
@@ -59,7 +47,7 @@ export default Ember.Controller.extend({
     bestNode: Ember.computed('model.nodes', {
         get() {
             var node = null;
-            this.get('model.nodes').forEach(function (n) {
+            this.get('model.nodes').forEach(function(n) {
                 if (!node) {
                     node = n;
                 }
@@ -86,7 +74,7 @@ export default Ember.Controller.extend({
             return percent.toFixed(2);
         }
     }),
-   
+
     nextEpoch: Ember.computed('height', {
         get() {
             var epochOffset = (30000 - (this.getWithDefault('height', 1) % 30000)) * 1000 * this.get('config').BlockTime;

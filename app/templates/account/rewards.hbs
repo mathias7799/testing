@@ -17,11 +17,7 @@
                     <td>{{format-balance sumreward.reward}}</td>
                     <td><em><small>≅ 
                                 
-                        {{#if (eq config.Currency 'USD') }}
-                        {{ format-ethusd sumreward.reward model.exchangedata.price_usd }}
-                        {{else}}
-                        {{ format-ethinr sumreward.reward model.exchangedata.price_inr }}
-                        {{/if}}
+   
                         
                             </small></em></td>
                 </tr>
